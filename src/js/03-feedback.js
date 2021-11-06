@@ -23,10 +23,13 @@ function onTextareaInput (e) {
 
 function clearForm (e) {
     e.preventDefault();
-    e.currentTarget.reset();
     localStorage.removeItem(FORM_DATA);
+    console.log('email: ', feedbackform.email.value);
+    console.log('message: ', feedbackform.message.value);
+    e.currentTarget.reset();
     saveData.email = '';
     saveData.message = '';
+    
     
 }
 

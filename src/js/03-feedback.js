@@ -24,7 +24,7 @@ function onTextareaInput (e) {
 function clearForm (e) {
     e.preventDefault();
     localStorage.removeItem(FORM_DATA);
-    const dataSave = {email: '${feedbackform.email.value}', message: '${feedbackform.message.value}'};
+    const dataSave = {email: `${feedbackform.email.value}`, message: `${feedbackform.message.value}`};
     console.log(dataSave);
     // console.log('email: ', feedbackform.email.value);
     // console.log('message: ', feedbackform.message.value);
